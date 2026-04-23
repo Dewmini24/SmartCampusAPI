@@ -116,10 +116,6 @@ curl -X POST http://localhost:8080/SmartCampusAPI/api/v1/sensors/TEMP-001/readin
 - Centralized logging
 - Proper HTTP status codes
 
-**Server environment details** — JDK version, operating system paths, and server configuration details may be visible, narrowing down the attack surface.
-
-The Global ExceptionMapper intercepts all unhandled `Throwable` instances and returns a generic 500 response with no internal details, ensuring the API never leaks implementation information to external consumers regardless of what unexpected error occurs internally.
-
 ## Conclusion
 
 This project demonstrates a complete RESTful API using JAX-RS, following best practices in backend development. It includes proper validation, error handling, and scalable architecture, reflecting real-world API design.
